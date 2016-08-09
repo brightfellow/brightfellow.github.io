@@ -1,9 +1,15 @@
 /* Dancing stuff
 --------------------------------------------------------------*/
 var imgList = [
-	'static/img/girl_skankin.gif',
-	'static/img/skankin.gif',
-	'static/img/girl_dancing_kitchen.gif'
+	'static/img/drawings/norabf.png',
+	'static/img/drawings/amybb.png',
+	'static/img/drawings/colleen.png',
+	'static/img/drawings/taylor2.png',
+	'static/img/drawings/AA_girl.png',
+	'static/img/drawings/amy_misfits.png',
+	'static/img/drawings/bm_girl.png',
+	'static/img/drawings/nicole_stark.png',
+	'static/img/drawings/joss.png'
 ];
 
 var counter = 0;
@@ -11,22 +17,22 @@ console.log(counter);
 
 $('.previous-btn').click(function() {
 	if (counter == 0) {
-		counter = 2;
-		$('#dancing-img').attr('src', imgList[counter]);
+		counter = 8;
+		$('#img').attr('src', imgList[counter]);
 	} else {
 		counter =  counter - 1;
-		$('#dancing-img').attr('src', imgList[counter]);
+		$('#img').attr('src', imgList[counter]);
 	}
 	console.log(counter);
 });
 
 $('.next-btn').click(function() {
-	if (counter == 2) {
+	if (counter == 8) {
 		counter = 0;
-		$('#dancing-img').attr('src', imgList[counter]);
+		$('#img').attr('src', imgList[counter]);
 	} else {
 		counter =  counter + 1;
-		$('#dancing-img').attr('src', imgList[counter]);
+		$('#img').attr('src', imgList[counter]);
 	}
 	console.log(counter);
 });

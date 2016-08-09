@@ -13,91 +13,60 @@
     </head>
     <body>
         <div class="container" style="background-color: #191d69; width: 100%; margin-bottom: 20px;">
-            <h1 class="text-center">BRIGHTFELLOW</h1>
+            <h1 class="text-center" style="color: #FFF;">BRIGHTFELLOW</h1>
         </div>
 
-        <div class="container" style="background-color: #FFF; color: #000;">
+        <div class="container" style="background-color: #FFF;">
+
             <div class="list-group text-center">
-                <a href="#" class="list-group-item" data-toggle="modal" data-target=".music"><h2>Music</h2></a>
-                <a href="#" class="list-group-item" data-toggle="modal" data-target=".dancing"><h2>Dancing</h2></a>
-                <a href="#" class="list-group-item" data-toggle="modal" data-target=".pizza"><h2>Pizza</h2></a>
-                <a href="http://luismanu.com/" class="list-group-item" target="_blank"><h2>Programming</h2></a>
-                <a href="#" class="list-group-item" data-toggle="modal" data-target=".kombucha"><h2>Kombucha w/ ginger</h2></a>
+                <a href="#" class="list-group-item" data-toggle="modal" data-target="#drawings">Drawings</a>
+                <!-- <a href="#" class="list-group-item">Writings</a> -->
+                <a href="http://luismanu.com/" class="list-group-item" target="_blank">Programming</a>
+                <!-- <a href="#" class="list-group-item">About</a> -->
+
             </div>
+
+
+
+
+
         </div>
 
-        <div class="modal fade music" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
 
-                    <div class="modal-body">
-                        <div class="videoWrapper"></div>
+        <img class="img-responsive center-block" src="static/img/skankin.gif" style="max-height: 100px; margin-top: 50px;">
 
-                        <div class="list-group" style="padding-top: 20px;">
-                            <a href="#" class="list-group-item video-btn" data-video="rkjIPJJqcv0">The Aggrolites - Reggae Hit L.A.</a>
-                            <a href="#" class="list-group-item video-btn" data-video="tXrnuwZreHg">Ethel Smith - Tico Tico</a>
-                            <a href="#" class="list-group-item video-btn" data-video="4DoumQbWUiE">Kemuri - PMA</a>
-                            <a href="#" class="list-group-item video-btn" data-video="ijGnBqVw7JY">The Stubborn All-Stars - Tin Spam</a>
-                            <a href="#" class="list-group-item video-btn" data-video="ZThM8lhg0eU">The Mowgli's - San Francisco</a>
-                            <a href="#" class="list-group-item video-btn" data-video="kvHxWxbS9dQ">Batmobile - I'm A Lover Not A Fighter</a>
-                        </div>
-                    </div>
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#drawings">
+          Launch demo modal
+        </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="drawings" tabindex="-1" role="dialog" aria-labelledby="drawingsModal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 40px;"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="drawingsModal">PUNK ROCK GIRLS</h4>
+              </div>
+
+              <div class="modal-body">
+                <div id="swap-area" style="padding: 20px;">
+                    <img class="img-responsive center-block next-btn" id="img" src="static/img/drawings/norabf.png" style="max-height: 400px;">
                 </div>
+
+                <ul class="pager">
+                    <li class="previous-btn"><a href="#">Previous</a></li>
+                    <li class="next-btn"><a href="#">Next</a></li>
+                </ul>
+              </div>
+
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div> -->
             </div>
+          </div>
         </div>
 
-        <div class="modal fade dancing" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <img class="img-responsive center-block" id="dancing-img" src="static/img/girl_skankin.gif">
-                    </div>
-
-                    <div class="modal-footer">
-                        <ul class="pager">
-                            <li class="previous-btn"><a href="#">Previous</a></li>
-                            <li class="next-btn"><a href="#">Next</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade pizza" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <img class="img-responsive center-block" src="static/img/pizza.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade kombucha" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <img class="img-responsive center-block" src="static/img/gingerade.png">
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

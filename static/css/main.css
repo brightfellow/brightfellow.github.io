@@ -2,8 +2,10 @@
 
 body {
     background: url(../img/bg.jpg);
-    color: #FFF;
+    /*color: #FFF;*/
     font-family: 'Chewy', cursive;
+    font-size: 18px;
+    line-height: 2.0;
 }
 
 /* Bootstrap override
@@ -42,7 +44,7 @@ body {
 
 
 
-.pizza img {
+.pizza {
     /*width: 100%;*/
     /*margin: 20px;*/
     /*width: 100px;*/
