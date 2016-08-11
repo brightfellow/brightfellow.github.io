@@ -1,11 +1,19 @@
 $(document).ready(function() {
 	$('#prg-btn').click(function() {
+		$(this).toggleClass('active');
+		$('.dropdown-btn').not(this).removeClass('active');
+
+
+
 		$('#prg-carousel').slideToggle();
 		$('.dropdown').not('#prg-carousel').slideUp();
 	});
 
 
 	$('#moto-btn').click(function() {
+		$(this).toggleClass('active');
+		$('.dropdown-btn').not(this).removeClass('active');
+
 		$('#moto-carousel').slideDown();
 		$('.dropdown').not('#moto-carousel').slideUp();
 	});
@@ -13,6 +21,7 @@ $(document).ready(function() {
 
 	$('.close').click(function() {
 		$('.dropdown').slideUp();
+		$('.dropdown-btn').removeClass('active');
 	});
 
 
