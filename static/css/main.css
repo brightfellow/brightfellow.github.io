@@ -46,8 +46,9 @@ body {
     height: auto;
     max-height: 400px;
 }
-#moto-imgs .item img {
+/*#moto-imgs .item img,
+.moto img {
     display: block;
     width: 100%;
     height: auto;
-}
+}*/

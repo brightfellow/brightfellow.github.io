@@ -1,9 +1,16 @@
 $(document).ready(function() {
-	$('#prg-btn').click(function() {
+
+	$('#all-btn').click(function() {
 		$(this).toggleClass('active');
 		$('.dropdown-btn').not(this).removeClass('active');
 
+		$('#all-carousel').slideDown();
+		$('.dropdown').not('#all-carousel').slideUp();
+	});
 
+	$('#prg-btn').click(function() {
+		$(this).toggleClass('active');
+		$('.dropdown-btn').not(this).removeClass('active');
 
 		$('#prg-carousel').slideToggle();
 		$('.dropdown').not('#prg-carousel').slideUp();
@@ -19,6 +26,10 @@ $(document).ready(function() {
 	});
 
 
+
+
+
+
 	$('.close').click(function() {
 		$('.dropdown').slideUp();
 		$('.dropdown-btn').removeClass('active');
@@ -29,6 +40,6 @@ $(document).ready(function() {
 		navigation : true,
 		slideSpeed : 300,
 		paginationSpeed : 400,
-		singleItem:true
+		singleItem: true
 	});
 });
